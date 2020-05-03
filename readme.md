@@ -349,3 +349,25 @@ class ProductController extends BaseController
 <br><br>
 Testing
 php artisan serve
+
+
+
+<h2> API Details</h2>
+<ol>
+    <li>LOGIN : Method: POST, URL: http://127.0.0.1:8000/api/login</li>
+    <li>REGISTER: Method: POST, URL: http://127.0.0.1:8000/api/register</li>
+    <li>USERDETAILS: Method: GET, URL: http://127.0.0.1:8000/api/user</li>
+    <li>PRODUCT LIST : Method: POST, URL: http://127.0.0.1:8000/api/products</li>
+    <li>CREATE: Method: POST, URL: http://127.0.0.1:8000/api/products</li>
+    <li>SHOW: Method: GET, URL: http://127.0.0.1:8000/api/products/id</li>
+    <li>UPDATE: Method: PUR, URL: http://127.0.0.1:8000/api/products/id</li>
+    <li>DELETE: Method: DELETE, URL: http://127.0.0.1:8000/api/products/id</li>
+    </ol>
+    
+    <h2>Note: Pass Token with Header to access secure API like: USERDETAILS, PRODUCT LIST,CREATE etc </h2>
+    <h2> When testing Details API or any API that requires a user to be authenticated, you need to specify two headers. You must specify access token as a Bearer token in the Authorization header. Basically, you have to concatenate the access token that you received after login and registration with the Bearer followed by a space.</h2>
+    
+    'headers' => [
+    'Accept' => 'application/json',
+    'Authorization' => 'Bearer '. $accessToken,
+]
