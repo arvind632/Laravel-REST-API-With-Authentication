@@ -129,7 +129,7 @@ Route::middleware('auth:api')->group(function () {
 h) Create Controller for Authentication
 php artisan make:controller API/RegisterController
 
-<?php
+
 
 
 namespace App\Http\Controllers\API;
@@ -220,7 +220,7 @@ class RegisterController extends BaseController
 <br><br><br>
 g) Create Product CRUD
 
-<?php
+
 namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
