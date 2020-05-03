@@ -2,6 +2,7 @@
 <ol>
     <li> git clone git@github.com:arvind632/Laravel-REST-API-With-Authentication.git</li>
     <li> composer update</li>
+    <li> setup DB and .env file</li>
     <li> php artisan migrate</li>
 </ol>  
 
@@ -9,26 +10,30 @@
 <h3> Creating a new project </h3>
 
 <h3> Table of Contents </h3>
-1. Creating a new project ( composer create-project --prefer-dist laravel/laravel blog 6 )
-2. Install Package
+<h3> 1. Creating a new project 
+ <b>  composer create-project --prefer-dist laravel/laravel blog 6 </b>
+<h3>2. Install Package</h3>
 We need to install Laravel Passport package via the composer dependency manager. Run the following command to require the package.
 composer require laravel/passport
-3. Adding Laravel Passport
-In config/app.php file add the code .
+<h3>3. Adding Laravel Passport</h3>
+<b>In config/app.php file add the code .</b>
+<b>
 a) 'providers' => [
     
     Laravel\Passport\PassportServiceProvider::class,
 ]
+</b>
 
-
+<br>
  Service Provider
 Migration and Installation
+<br>
 b) php artisan migrate
-c) php artisan passport:install
-Passport Configure
-d) app/User.php
+<br> c) php artisan passport:install
+<br> Passport Configure
+<br> d) app/User.php
 
-<?php
+<br> <?php
  
 namespace App;
  
@@ -59,8 +64,8 @@ class User extends Authenticatable
     ];
 }
 
-e) AuthServiceProvider
-<?php
+<br> e) AuthServiceProvider
+<br><br> <?php
  
 namespace App\Providers;
  
@@ -90,6 +95,7 @@ class AuthServiceProvider extends ServiceProvider
         Passport::routes();
     }
 }
+<br><br>
 f) config/auth.php
 return [
     ....
@@ -108,6 +114,7 @@ return [
  
     ....
 ]
+<br><br>
 g) Create Route
 
 Route::post('login', 'PassportController@login');
@@ -118,7 +125,7 @@ Route::middleware('auth:api')->group(function () {
  
     Route::resource('products', 'ProductController');
 });
-
+<br><br>
 h) Create Controller for Authentication
 php artisan make:controller API/RegisterController
 
@@ -209,6 +216,8 @@ class RegisterController extends BaseController
     }
 
 }
+
+<br><br><br>
 g) Create Product CRUD
 
 <?php
@@ -366,6 +375,6 @@ class ProductController extends BaseController
        
     }
 }
-
+<br><br>
 Testing
 php artisan serve
