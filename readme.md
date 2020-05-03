@@ -377,4 +377,9 @@ $accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.';
 <br/>
 <br/>
 <br/>
+<img src="https://miro.medium.com/max/1400/1*oh9uu9GJceFfEbclKLO29g.png">
+
+<br/>
+<br/>
+<br/>
 <img src="https://tutsforweb.com/wp-content/uploads/2018/05/details.png">
