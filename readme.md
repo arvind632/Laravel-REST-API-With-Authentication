@@ -366,7 +366,9 @@ php artisan serve
     
     <h2>Note: Pass Token with Header to access secure API like: USERDETAILS, PRODUCT LIST,CREATE etc </h2>
     <h2> When testing Details API or any API that requires a user to be authenticated, you need to specify two headers. You must specify access token as a Bearer token in the Authorization header. Basically, you have to concatenate the access token that you received after login and registration with the Bearer followed by a space.</h2>
-$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.';    
+
+$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.';   
+<br/>
     'headers' => [
     'Accept' => 'application/json',
     'Authorization' => 'Bearer '. $accessToken,
