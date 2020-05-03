@@ -364,6 +364,7 @@ php artisan serve
     <li>DELETE: Method: DELETE, URL: http://127.0.0.1:8000/api/products/id</li>
     </ol>
     
+    
     <h2>Note: Pass Token with Header to access secure API like: USERDETAILS, PRODUCT LIST,CREATE etc </h2>
     <h2> When testing Details API or any API that requires a user to be authenticated, you need to specify two headers. You must specify access token as a Bearer token in the Authorization header. Basically, you have to concatenate the access token that you received after login and registration with the Bearer followed by a space.</h2>
 
@@ -373,3 +374,5 @@ $accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.';
     'Accept' => 'application/json',
     'Authorization' => 'Bearer '. $accessToken,
 ]
+<br/>
+<img src="https://tutsforweb.com/wp-content/uploads/2018/05/details.png">
