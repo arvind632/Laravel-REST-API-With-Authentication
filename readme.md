@@ -2,7 +2,7 @@
 <ul>
     <ol> git clone git@github.com:arvind632/Laravel-REST-API-With-Authentication.git</ol>
     <ol> composer update</ol>
-    <ol> composer update</ol>
+    <ol> php artisan migrate</ol>
 </ul>  
 
 
