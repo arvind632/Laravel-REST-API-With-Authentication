@@ -230,11 +230,7 @@ use Validator;
 
 class ProductController extends BaseController
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function index()
     {  
         $products = Product::all();
@@ -242,16 +238,11 @@ class ProductController extends BaseController
             'success' => true,
             'data' => $products
         ]);
-        //return $this->sendResponse($products->toArray(), 'Products retrieved successfully.');
+        
     }
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
 
     public function store(Request $request)
     {
@@ -276,12 +267,7 @@ class ProductController extends BaseController
     }
     
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function show($id)
     {
         $product = Product::find($id);
@@ -308,13 +294,7 @@ class ProductController extends BaseController
     }
 
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Product $product)
     {
 
@@ -344,12 +324,7 @@ class ProductController extends BaseController
     }
 
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function destroy(Product $product)
     {
 
