@@ -1,9 +1,9 @@
 <h3> Create REST API With Passport Authentication</h3>
-<ul>
-    <ol> git clone git@github.com:arvind632/Laravel-REST-API-With-Authentication.git</ol>
-    <ol> composer update</ol>
-    <ol> php artisan migrate</ol>
-</ul>  
+<ol>
+    <li> git clone git@github.com:arvind632/Laravel-REST-API-With-Authentication.git</li>
+    <li> composer update</li>
+    <li> php artisan migrate</li>
+</ol>  
 
 
 <h3> Creating a new project </h3>
